@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      
+      "target": "es6",
+      "module": "commonjs",
+      "outDir": "./",
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "types": [
+        "node"
+      ],
+      "typeRoots": [
+        "node_modules/@types"
+      ],
+      "watch": true
+      
+    },
+    "include": [
+      "src/**/*.ts",
+      "test/**/*.ts", "src/model/user.js", "src/app.ts"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+    , "presets": [
+      ["env", {
+        "targets": {
+          "node": "current"
+        }
+        }],
+      "stage-1"
+    ],
+    "plugins": []
+  }
